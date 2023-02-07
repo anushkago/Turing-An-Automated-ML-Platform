@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Col, Image, Row } from 'react-bootstrap'
+import UploadFile from '../Components/UploadFile'
 
 function HomeScreen() {
   return (
@@ -13,7 +14,7 @@ function HomeScreen() {
                 </Row>
                 <Row className='my-3'>
                     <Col md = {4}>
-                        <Button className = 'btn  btn-block' type='button' style = {{backgroundColor : 'rgb(53,58,63)'}}>Upload Data <i class="fa-solid fa-upload mx-2"></i></Button>
+                        <UploadFile />
                     </Col>
                 </Row>
             </Col>
