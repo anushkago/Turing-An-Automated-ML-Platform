@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Col, Image, Row } from 'react-bootstrap'
-import UploadFile from '../Components/UploadFile'
+import { LinkContainer } from 'react-router-bootstrap'
+import UploadFile from './UploadFileScreen'
 
 function HomeScreen() {
   return (
@@ -14,7 +15,10 @@ function HomeScreen() {
                 </Row>
                 <Row className='my-3'>
                     <Col md = {4}>
-                        <UploadFile />
+                        <LinkContainer to='/upload'>
+                            <Button className = 'btn  btn-block' type="button" style = {{backgroundColor : 'rgb(53,58,63)'}}>Try Turing <i className="fa-solid fa-upload mx-2"></i></Button>
+                        </LinkContainer>
+                        
                     </Col>
                 </Row>
             </Col>

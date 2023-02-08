@@ -15,11 +15,11 @@ function Header() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <LinkContainer to = '/'>
-                        <Nav.Link>Link</Nav.Link>
+                    <LinkContainer to = '/upload'>
+                        <Nav.Link><i className="fa-solid fa-upload mx-2"></i>Upload Data</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to = '/'>
-                        <Nav.Link>Link</Nav.Link>
+                    <LinkContainer to = '/visualise'>
+                        <Nav.Link>Visualise</Nav.Link>
                     </LinkContainer>
                 </Nav>
                 </Navbar.Collapse>
